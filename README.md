@@ -1,1 +1,1 @@
-https://talhaahbinabbasali123456.github.io/weather-app-modified/
+https://talhaahbinabbasali123456.github.io/weather-app/
