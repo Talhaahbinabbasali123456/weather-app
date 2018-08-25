@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wheater App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+
+</head>
+<body onload="style()">
+	<article class="main-article-layout">
+		<div class="main-center-div">
+
+			<div class="center-div-header">
+				<div class="logo">
+						<img class="logo-icon" src="sole.png">
+					<span class="logo-flex-1">The</span>
+					<span class="logo-flex">
+						<span class="outline">WHEATER</span>
+						<span class="outline">NETWORK</span>
+					</span>
+				</div>
+				<div class="user-info-div">
+					<form onsubmit="return mySubmitFunction()">
+						<input type="text" name="" placeholder="Search City" class="input"><button type="submit" onclick="search()">Search</button>
+
+					</form>
+			</div>
+				<div class="city-name">City?</div>
+			</div>
+			<section class="detail-sec">
+				<div class="detail-left">
+					<p class="today"> <img class="iccons"	src="icon.png"></p>
+					<div class="tem-flex">
+						<span class="centr-tem"></span>
+						<div id="MyClockDisplay" class="clock"></div>
+					
+					</div>
+					<p class="today">Today</p>
+					<div class="list-tem-detail">
+						<p class="list" id="des"></p>
+						<p class="list" id="humi"></p>
+						<p class="list" id="low"></p>
+						<p class="list" id="visibility"></p>
+						<p class="list" id="pressure"></p>
+					</div>
+				</div>
+
+				<div class="detail-right">
+						<div class="days">
+							<div class="day-info">	<p class="today mon">Monday</p>
+							<h1 class="pre-temp-mon chn">
+								
+							</h1>
+							<p class="pre-wind-mon chn">
+								
+							</p>
+							<p class="pre-cloud-mon chn">
+								
+							</p>
+							</div>
+							<div class="day-info">	<p class="today tues">Tuesday</p>
+								<h1 class="pre-temp-tues chn">
+									
+								</h1>
+								<p class="pre-wind-tue chn">
+									
+								</p>
+								<p class="pre-cloud-tue chn">
+									
+								</p></div>
+							<div class="day-info">	<p class="today wed">Wednesday</p>
+								<h1 class="pre-temp-wed chn">
+									
+								</h1>
+								<p class="pre-wind-wed chn">
+									
+								</p>
+								<p class="pre-cloud-wed chn">
+									
+								</p></div>
+							<div class="day-info">	<p class="today thus">Thursday</p>
+								<h1 class="pre-temp-thus chn">
+									
+								</h1>
+								<p class="pre-wind-thus chn">
+								
+								</p>
+								<p class="pre-cloud-thus chn">
+								
+								</p></div>
+							<div class="day-info">	<p class="today fri">Friday</p>
+							<h1 class="pre-temp-fri chn">
+								
+							</h1>
+							<p class="pre-wind-fri chn">
+								
+							</p>
+							<p class="pre-cloud-fri chn">
+								
+							</p>
+						</div>
+						
+						</div>
+				</div>
+			
+			</section>
+		</div>
+	</article>
+</body>
+</html>
