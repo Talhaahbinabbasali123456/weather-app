@@ -3,13 +3,35 @@ let months = ["January","February","March","April","May","June","July","August",
 
 
 
-let arrayy = ["imgs/giphy.gif","imgs/l.gif", "imgs/source.gif","imgs/e.jpg"];
+let arrayy = ["imgs/day-time.jpg", "imgs/night.png"];
 function style() {
-	let randomly = parseInt(Math.random()*4);
-	document.querySelector(".main-center-div").style["background-image"] = `url(${arrayy[randomly]})`;
+	let randomly = parseInt(Math.random()*2);
+	document.querySelector("body").style["background-image"] = `url(${arrayy[randomly]})`;
 	showTime();
 }
-setInterval(style,4000);
+setInterval(style,3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function search() {
 	let userVal = document.querySelector(".input").value;
@@ -17,7 +39,6 @@ function search() {
 		alert ("Search Bar Is Empty");
 	} else {
 	document.querySelector(".city-name").innerHTML = userVal;
-	// document.querySelector(".input").value = "";
 	}
 	let city = document.querySelector(".city-name").innerHTML;
 	let wheather = new XMLHttpRequest();
